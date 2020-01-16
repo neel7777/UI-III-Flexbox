@@ -3,64 +3,304 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
 }
 
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+    margin: 30px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.title1 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image2 {
+    vertical-align: middle;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    ;
+    vertical-align: middle;
+}
+
+.middle-img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.top div {
+    width: 100%;
+    border: .2px solid black;
+}
+
+.bottom {
+    width: 100%;
+    border: .2px solid black;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*code for services starts here*/
+
+.scontainer {
+    margin: 30px;
+    max-width: 100%;
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: space-evenly;
+    ;
+    vertical-align: middle;
+}
+
+.services-header-img {
+    vertical-align: middle;
+    width: 98%;
+    margin: 10px;
+}
+
+.servicescon {
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.servicestag {
+    text-align: left;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container4 {
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    background-color: lightgrey;
+    margin: 20px;
+    border: .5px solid black;
+    padding: 10px;
+}
+
+.services-info-img {
+    vertical-align: middle;
+    width: 98%;
+    margin: 10px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
